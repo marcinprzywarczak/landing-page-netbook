@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Netbook Landing Page</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="font-Inter">
+<header class="header-section pb-8">
+    <nav class="px-12 xl:px-32 flex flex-row py-8 items-center">
+        <img src="./imgs/logo.svg" alt="">
+        <div class="hidden xl:flex flex-row items-center flex-1 pl-10 gap-x-8 text-menu-text-color">
+            <div>Home</div>
+            <div>Community</div>
+            <div>Blog</div>
+            <div>Event</div>
+        </div>
+        <div class="hidden xl:flex flex-row gap-x-8">
+            <div class="relative border-b bg-transparent">
+              <span class="absolute inset-y-0 left-0 flex items-center pl-2 bg-transparent">
+                  <i class="text-search-icon fa-solid fa-magnifying-glass"></i>
+              </span>
+                <input type="text" class="py-2 pl-10 focus:outline-none h-full bg-transparent" placeholder="Search here..." >
+            </div>
+            <button type="button" class="bg-login-button text-white px-8 py-4 rounded-xl">Log in</button>
+        </div>
+        <div class="flex xl:hidden flex-1 justify-end">
+            <i  id="mobileMenuButton" class="cursor-pointer transition duration-500 text-2xl fas fa-bars z-30 text-header-color hover:text-search-icon"></i>
+        </div>
+    </nav>
+    <ul class="mobile-menu slide-out display-none flex items-center justify-center text-white
+                    flex-col w-full fixed justify-center h-0 overflow-hidden transition-all duration-700 z-20 gap-y-12 right-0 xl:hidden">
+        <li class="cursor-pointer text-xl">Home</li>
+        <li class="cursor-pointer text-xl">Community</li>
+        <li class="cursor-pointer text-xl">Blog</li>
+        <li class="cursor-pointer text-xl">Events</li>
+        <li>
+            <div class="flex flex-row gap-x-8">
+                <div class="relative border-b bg-transparent">
+              <span class="absolute inset-y-0 left-0 flex items-center pl-2 bg-transparent">
+                  <i class="text-white fa-solid fa-magnifying-glass"></i>
+              </span>
+                    <input type="text" class="py-2 pl-10 focus:outline-none h-full bg-transparent" placeholder="Search here..." >
+                </div>
+                <button type="button" class="bg-login-button text-white px-8 py-4 rounded-xl">Log in</button>
+            </div>
+        </li>
+    </ul>
+    <div class="container flex md:flex-row flex-col items-center sectionOpacity pt-10 md:pt-0">
+        <!--napisy-->
+        <div class="flex flex-col gap-y-4">
+            <span class="text-login-button community-badge rounded-xl px-4 py-2 text-sm w-fit">
+                Netbook community
+            </span>
+            <h1 class="text-5xl text-header-color font-bold">Your Solutions For Community!</h1>
+            <p class="text-menu-text-color">More than 2 billion people in over countries use socibook to stay in touch with friends & family.</p>
+            <div class="flex gap-x-3">
+                <button type="button" class="bg-login-button text-white px-8 py-4 rounded-xl">About More</button>
+                <button type="button" class="text-login-button border-login-button border px-8 py-4 rounded-xl">Invite Friend</button>
+            </div>
+        </div>
+        <!--zdj-->
+        <div><img src="./imgs/connections-people.svg" alt=""> </div>
+    </div>
+</header>
+<section class="container flex md:flex-row flex-col items-center py-20 gap-20 sectionOpacity">
+    <div class="flex flex-col gap-y-6 md:w-1/2 md:items-start w-full md:pr-28">
+        <span class="text-login-button text-lg w-fit -mb-4 font-semibold">
+            Whats Netboks?
+        </span>
+        <h1 class="text-3xl text-header-color font-bold">Why Join to Netbook Social Network?</h1>
+        <p class="text-menu-text-color">Recent surveys have indicated that small businesses recognise the need they have to connect with consumer.</p>
+        <ul class="list-inside text-header-color">
+            <li>
+                <div class="flex items-center gap-2 text-list-color font-semibold py-1">
+                    <div class="w-4 h-4 rounded-full community-badge relative">
+                        <div class="h-1.5 w-1.5 rounded-full bg-login-button absolute inset-0 m-auto"></div>
+                    </div>
+                    Groups
+                </div>
+            </li>
+            <li>
+                <div class="flex items-center gap-2 text-list-color font-semibold py-1">
+                    <div class="w-4 h-4 rounded-full community-badge relative">
+                        <div class="h-1.5 w-1.5 rounded-full bg-login-button absolute inset-0 m-auto"></div>
+                    </div>
+                    Messages
+                </div>
+            </li>
+            <li>
+                <div class="flex items-center gap-2 text-list-color font-semibold py-1">
+                    <div class="w-4 h-4 rounded-full community-badge relative">
+                        <div class="h-1.5 w-1.5 rounded-full bg-login-button absolute inset-0 m-auto"></div>
+                    </div>
+                    Share
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--zdj-->
+    <div class="flex flex-row items-center justify-end gap-8 md:w-1/2 w-full">
+        <div class=""><img src="./imgs/section2-1.png" alt=""></div>
+        <div class="flex flex-col gap-6">
+            <img class="rounded-xl" src="./imgs/section2-2.png" alt="">
+            <img class="rounded-xl" src="./imgs/section2-3.png" alt="">
+        </div>
+     </div>
+</section>
+
+<section class="container flex md:flex-row flex-col-reverse items-center py-20 md:gap-32 gap-16">
+    <div class="flex md:flex-row flex-col items-center justify-center md:w-2/3 gap-10">
+        <!--card 1-->
+        <div class="flex flex-col py-12 px-8 gap-8 border shadow-xl md:w-1/2 rounded-xl">
+            <div class="flex items-center gap-2">
+                <img src="./imgs/Star.svg" alt="">
+                <div class="text-header-color text-lg font-semibold">4.8 Rating</div>
+            </div>
+            <div class="flex items-center gap-2">
+                <img src="./imgs/people.png" alt="" style="height: 30px;">
+                <div class="text-login-button font-semibold">+836k</div>
+                <div class="text-members-text-color font-semibold">Members</div>
+            </div>
+            <div class="text-menu-text-color">More than 2 billion we people over countries use socibooks we to stay in touch with friends.</div>
+            <div class="flex text-login-button gap-2">
+                <div class=" font-semibold">Join Our Community</div>
+                <img src="./imgs/ArrowRight.svg" alt="">
+            </div>
+
+        </div>
+
+        <!--card 2-->
+        <div class="flex flex-col py-12 px-8 gap-8 border shadow-xl md:w-1/2 rounded-xl">
+            <div class="flex items-center gap-2">
+<!--                <i class="fa-regular fa-trophy text-login-button text-2xl font-normal"></i>-->
+                <img src="./imgs/Trophy.svg" alt="">
+                <div class="text-header-color text-lg font-semibold">Awwwards</div>
+            </div>
+            <div class="flex items-center gap-2">
+                <i class="fa-brands fa-github text-3xl"></i>
+                <div class="flex gap-1">
+                    <div class="text-members-text-color">Best of </div>
+                    <div class="text-login-button font-semibold"> 2021 </div>
+                    <div class="text-members-text-color"> on Github</div>
+                </div>
+            </div>
+            <div class="text-menu-text-color">More than 2 billion we people over countries use socibooks we to stay in touch with friends.</div>
+            <div class="flex text-login-button gap-2">
+                <div class="text-members-text-color font-semibold">Go To Awards</div>
+                <img src="./imgs/ArrowRight-gray.svg" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="flex flex-col gap-y-6 md:w-1/3">
+        <span class="text-login-button text-lg w-fit -mb-4 font-semibold">
+            Our Achievement
+        </span>
+        <h1 class="text-3xl text-header-color font-bold">We are Connecting You The Digital Life.</h1>
+        <p class="text-menu-text-color">The scope the Social Media becomes crucial Is helps the business to directly engage with their needs and wants.</p>
+
+        <button type="button" class="w-fit bg-login-button text-white px-8 py-4 rounded-xl shadow-lg">
+            <div class="flex gap-4">
+                Discover me
+                <img src="./imgs/ArrowRigh-white.svg" alt="">
+            </div>
+        </button>
+
+    </div>
+</section>
+
+<section class="community-section ">
+    <div class="container flex flex-col items-center justify-center pt-20 pb-32 gap-12">
+        <div class="flex flex-col gap-y-6 text-center ">
+        <span class="text-login-button text-lg -mb-4 font-semibold">
+            Our Community
+        </span>
+            <h1 class="text-3xl text-header-color font-bold">Community Main Feature</h1>
+            <p class="text-menu-text-color">The wise man therefore always holds in these matters<br> to this principle
+                of selection.</p>
+        </div>
+
+        <div class="flex flex-col items-center md:px-20 px-10 gap-12">
+            <div class="flex flex-col md:flex-row gap-12">
+                <!--card-->
+                <div class="community-card">
+                    <img class="-mt-1" src="./imgs/members-icon.svg" alt="">
+
+                    <div class="flex flex-col gap-3">
+                        <h2 class="text-xl text-header-color font-semibold">Members, Friends</h2>
+                        <p class="text-menu-text-color">Members, Friends Connection ( like followers ), Private
+                            Message</p>
+                    </div>
+                </div>
+                <!--card-->
+                <div class="community-card">
+
+                        <img class="-mt-1" src="./imgs/groups-icon.svg" alt="">
+
+                    <div class="flex flex-col gap-3">
+                        <h2 class="text-xl text-header-color font-semibold">Groups</h2>
+                        <p class="text-menu-text-color">Your users can create groups to let other users to join and
+                            talk</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex flex-col md:flex-row gap-12">
+                <!--card-->
+                <div class="community-card">
+
+                    <img class="-mt-1 h-fit" src="./imgs/forum-icon.svg" alt="">
+
+                    <div class="flex flex-col gap-3">
+                        <h2 class="text-xl text-header-color font-semibold">Forum</h2>
+                        <p class="text-menu-text-color">Forum is ready by BBPress. Your users can make topics and talk.</p>
+                    </div>
+                </div>
+                <!--card-->
+                <div class="community-card">
+                    <img class="-mt-1 h-fit" src="./imgs/module-icon.svg" alt="">
+                    <div class="flex flex-col gap-3">
+                        <h2 class="text-xl text-header-color font-semibold">Custom Module</h2>
+                        <p class="text-menu-text-color">You can create Members, Groups Module. We already created 3 modules. It's by drag & drop live builder.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex flex-col md:flex-row gap-12">
+                <!--card-->
+                <div class="community-card">
+
+                        <img class="-mt-1" src="./imgs/list-icon.svg" alt="">
+
+                    <div class="flex flex-col gap-3">
+                        <h2 class="text-xl text-header-color font-semibold">List Builder</h2>
+                        <p class="text-menu-text-color">Members, Groups list can be modified by drag & drop live builder.</p>
+                    </div>
+                </div>
+                <!--card-->
+                <div class="community-card">
+
+                        <img class="-mt-1" src="./imgs/listscroll-icon.svg" alt="">
+
+                    <div class="flex flex-col gap-3">
+                        <h2 class="text-xl text-header-color font-semibold">List Scroll Effects</h2>
+                        <p class="text-menu-text-color">8 different scroll effects are ready.
+                            You can always change by your tastes.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="">
+    <div class="container flex flex-col items-center justify-center pt-10 pb-32 gap-12">
+        <div class="flex flex-col gap-y-6 text-center ">
+        <span class="text-login-button text-lg -mb-4 font-semibold">
+            Valuable Team
+        </span>
+            <h1 class="text-3xl text-header-color font-bold">Our Active Members</h1>
+            <p class="text-menu-text-color">when an unknown printer took a galley of type and meeting fari scrambled it.</p>
+        </div>
+
+        <div class="tab rounded-xl p-2 flex gap-4">
+            <button class="tab-button" data-tab="#newest">Newest</button>
+            <button class="tab-button" data-tab="#popular">Popular</button>
+            <button id="activeButton" class="tab-button tab-button-active" data-tab="#active">Active</button>
+        </div>
+
+        <div id="newest" class="tabContent flex hidden ">
+            <!--card user-->
+            <div class="tabUserCard">
+                <img src="./imgs/user4.png" width="142px" height="142px">
+                <div class="text-xl text-tab-text-color font-semibold pt-8">Alia Karon</div>
+                <div class="text-menu-text-color">@alia</div>
+            </div>
+            <!--card user-->
+            <div class="tabUserCard">
+                <img src="./imgs/user3.png" width="142px" height="142px">
+                <div class="text-xl text-tab-text-color font-semibold pt-8">Masterero Ali</div>
+                <div class="text-menu-text-color">@master</div>
+            </div>
+            <!--card user-->
+            <div class="tabUserCard">
+                <img src="./imgs/user2.png" width="142px" height="142px">
+                <div class="text-xl text-tab-text-color font-semibold pt-8">Kazi Rahman</div>
+                <div class="text-menu-text-color">@Rahman</div>
+            </div>
+            <!--card user-->
+            <div class="tabUserCard">
+                <img src="./imgs/user1.png" width="142px" height="142px">
+                <div class="text-xl text-tab-text-color font-semibold pt-8">Fahim Rahman</div>
+                <div class="text-menu-text-color">@rahman</div>
+            </div>
+        </div>
+        <div id="popular" class="tabContent flex hidden">
+
+            <!--card user-->
+            <div class="tabUserCard">
+                <img src="./imgs/user2.png" width="142px" height="142px">
+                <div class="text-xl text-tab-text-color font-semibold pt-8">Kazi Rahman</div>
+                <div class="text-menu-text-color">@Rahman</div>
+            </div>
+            <!--card user-->
+            <div class="tabUserCard">
+                <img src="./imgs/user1.png" width="142px" height="142px">
+                <div class="text-xl text-tab-text-color font-semibold pt-8">Fahim Rahman</div>
+                <div class="text-menu-text-color">@rahman</div>
+            </div>
+            <!--card user-->
+            <div class="tabUserCard">
+                <img src="./imgs/user4.png" width="142px" height="142px">
+                <div class="text-xl text-tab-text-color font-semibold pt-8">Alia Karon</div>
+                <div class="text-menu-text-color">@alia</div>
+            </div>
+            <!--card user-->
+            <div class="tabUserCard">
+                <img src="./imgs/user3.png" width="142px" height="142px">
+                <div class="text-xl text-tab-text-color font-semibold pt-8">Masterero Ali</div>
+                <div class="text-menu-text-color">@master</div>
+            </div>
+        </div>
+        <div id="active" class="tabContent flex hidden">
+            <!--card user-->
+            <div class="tabUserCard">
+                <img src="./imgs/user1.png" width="142px" height="142px">
+                <div class="text-xl text-tab-text-color font-semibold pt-8">Fahim Rahman</div>
+                <div class="text-menu-text-color">@rahman</div>
+            </div>
+            <!--card user-->
+            <div class="tabUserCard">
+                <img src="./imgs/user2.png" width="142px" height="142px">
+                <div class="text-xl text-tab-text-color font-semibold pt-8">Kazi Rahman</div>
+                <div class="text-menu-text-color">@Rahman</div>
+            </div>
+            <!--card user-->
+            <div class="tabUserCard">
+                <img src="./imgs/user3.png" width="142px" height="142px">
+                <div class="text-xl text-tab-text-color font-semibold pt-8">Masterero Ali</div>
+                <div class="text-menu-text-color">@master</div>
+            </div>
+            <!--card user-->
+            <div class="tabUserCard">
+                <img src="./imgs/user4.png" width="142px" height="142px">
+                <div class="text-xl text-tab-text-color font-semibold pt-8">Alia Karon</div>
+                <div class="text-menu-text-color">@alia</div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="mobileAppSection">
+    <div class="container flex md:flex-row flex-col items-center gap-20 mb-20 pt-20 md:pt-0">
+        <div class="flex flex-col gap-y-6 md:w-1/3 pr-10">
+        <span class="text-login-button text-lg w-fit -mb-4 font-semibold">
+            Get Our Aplication
+        </span>
+            <h1 class="text-3xl text-header-color font-bold">You Can Easily Find This App…!</h1>
+            <p class="text-menu-text-color">I say chap that’s suing lavatory chip shop gosh off his smashing boot are you taking the piss posh loo brilliant.</p>
+            <div class="flex gap-6">
+                <img src="./imgs/app-store.png" alt="">
+                <img src="./imgs/play-store.png" alt="">
+            </div>
+        </div>
+        <!--zdj-->
+        <div class="flex items-end justify-end gap-8 md:w-2/3">
+            <img src="./imgs/mobile.png">
+        </div>
+    </div>
+</section>
+
+<section class="">
+    <div class="container flex flex-col items-center justify-center pt-10 pb-32 gap-12">
+        <div class="flex flex-col gap-y-6 text-center ">
+        <span class="text-login-button text-lg -mb-4 font-semibold">
+            Get Our Aplication
+        </span>
+            <h1 class="text-3xl text-header-color font-bold">Latest News</h1>
+        </div>
+
+        <div class="flex flex-wrap md:flex-nowrap md:flex-row items-center justify-center gap-12">
+            <!--card-->
+            <div class="flex flex-col gap-6">
+                <img src="./imgs/news1.png" alt="">
+                <div class="flex items-start gap-2 pr-10">
+                    <img class="pt-4" src="./imgs/news-line.svg" alt="">
+                    <div class="flex flex-col gap-6">
+                        <div class="text-tab-text-color text-lg font-semibold">It Does Not Matter Hows Slowly go as Long</div>
+                        <div class="flex text-members-text-color gap-2 cursor-pointer hover:text-login-button">
+                            <div class="font-semibold">Continue reading</div>
+                            <img src="./imgs/ArrowRight-gray.svg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--card-->
+            <div class="flex flex-col gap-6">
+                <img src="./imgs/news2.png" alt="">
+                <div class="flex items-start gap-2 pr-10">
+                    <img class="pt-4" src="./imgs/news-line.svg" alt="">
+                    <div class="flex flex-col gap-6">
+                        <div class="text-tab-text-color text-lg font-semibold">Netbook Network Added New Photo Filter</div>
+                        <div class="flex text-members-text-color gap-2 cursor-pointer hover:text-login-button">
+                            <div class=" font-semibold">Continue reading</div>
+                            <img src="./imgs/ArrowRight-gray.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--card-->
+            <div class="flex flex-col gap-6">
+                <img src="./imgs/news3.png" alt="">
+                <div class="flex items-start gap-2 pr-10">
+                    <img class="pt-4" src="./imgs/news-line.svg" alt="">
+                    <div class="flex flex-col gap-6">
+                        <div class="text-tab-text-color text-lg font-semibold">We Optimised Netbooks Better Navigation</div>
+                        <div class="flex text-members-text-color gap-2 cursor-pointer hover:text-login-button">
+                            <div class="font-semibold">Continue reading</div>
+                            <img src="./imgs/ArrowRight-gray.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+
+    <div class="bg-footer-bg-color">
+        <div class="container">
+            <div class=" flex flex-wrap py-20 gap-10 items-center justify-center">
+                <div class="flex flex-row flex-wrap  gap-24 mr-0 ">
+                    <div class="flex flex-col text-footer-text-color gap-4">
+                        <div class="text-white font-semibold pb-2">Home</div>
+                        <div class="footerLinkStyles">Home</div>
+                        <div class="footerLinkStyles">Community</div>
+                        <div class="footerLinkStyles">Events</div>
+                        <div class="footerLinkStyles">Contact</div>
+                    </div>
+                    <div class="flex flex-col text-footer-text-color gap-4">
+                        <div class="text-white font-semibold pb-2">Resources</div>
+                        <div class="footerLinkStyles">Blog</div>
+                        <div class="footerLinkStyles">News</div>
+                        <div class="footerLinkStyles">Guides</div>
+                        <div class="footerLinkStyles">Help Center</div>
+                    </div>
+                    <div class="flex flex-col text-footer-text-color gap-4">
+                        <div class="text-white font-semibold pb-2">Community</div>
+                        <div class="footerLinkStyles">NewsFeed</div>
+                        <div class="footerLinkStyles">Profile</div>
+                        <div class="footerLinkStyles">Friends</div>
+                        <div class="footerLinkStyles">Forums</div>
+                    </div>
+                    <div class="flex flex-col text-footer-text-color gap-4">
+                        <div class="text-white font-semibold pb-2">Main links</div>
+                        <div class="footerLinkStyles">Members</div>
+                        <div class="footerLinkStyles">Activity</div>
+                        <div class="footerLinkStyles">Groups</div>
+                        <div class="footerLinkStyles">Private Group</div>
+                    </div>
+                </div>
+                <div class="flex flex-col self-start justify-self-start gap-6">
+                    <div class="text-white font-semibold">
+                        Subscribe Cirkle Newsletter
+                    </div>
+
+                    <div class="text-footer-text-color">Subscribe to be the first one to know about updates. Enter your
+                        email
+                    </div>
+
+                    <div class="flex flex-row ">
+                        <input type="text" placeholder="Email Address"
+                               class="pl-3 py-3 pr-6 bg-transparent text-footer-text-color border border-white rounded-xl focus:outline-none">
+                        <button class="px-4 py-3 bg-white rounded-xl text-footer-bg-color font-semibold -ml-5 hover:bg-footer-text-color">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-footer-bg-color2">
+        <div class="container bg-footer-bg-color2 flex sm:flex-row flex-col gap-4 justify-between items-center py-4">
+            <div class="text-footer-text-color">Besnik Creative Agency.</div>
+            <img src="./imgs/logo-white.svg" alt="">
+            <div class="flex gap-4">
+                <div class="footerSocialIcon">
+                    <i class="fa-brands fa-twitter text-footer-bg-color"></i>
+                </div>
+                <div class="footerSocialIcon">
+                    <i class="fa-brands fa-instagram text-footer-bg-color"></i>
+                </div>
+                <div class="footerSocialIcon">
+                    <i class="fa-brands fa-facebook-f text-footer-bg-color"></i>
+                </div>
+                <div class="footerSocialIcon">
+                    <i class="fa-brands fa-linkedin-in text-footer-bg-color"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<script src="./app.js"></script>
+</body>
+</html>

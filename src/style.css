@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header-section {
+    background: url("./imgs/base.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.community-section {
+    background: rgb(241,246,253);
+    background: linear-gradient(180deg, rgba(241,246,253,0) 0%, rgba(241,246,253,1) 26%, rgba(241,246,253,1) 62%, rgba(255,255,255,1) 89%);
+}
+
+.community-badge {
+    background-color: rgba(33,123,244, 0.1);
+}
+
+.tab {
+    background-color: rgba(33,123,244, 0.06);
+}
+
+.tab-button {
+    @apply text-tab-text-color px-8 py-2 rounded-xl hover:bg-login-button hover:text-white transition;
+}
+
+.tab-button-active {
+    @apply text-white bg-login-button ;
+}
+
+
+.community-card {
+    @apply flex md:w-1/2 w-full px-10 py-8 gap-8 rounded-xl  bg-white items-start shadow-md;
+}
+
+.tabContent {
+    @apply flex-wrap gap-12 items-center justify-center;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.tabUserCard {
+    @apply  flex flex-col items-center justify-center rounded-xl shadow-lg px-12 py-8 gap-2;
+}
+
+.mobileAppSection {
+    background-color: #E5F0FD;
+}
+
+.footerSocialIcon {
+    @apply bg-white flex items-center justify-center rounded-full cursor-pointer hover:bg-footer-text-color hover:text-footer-bg-color2;
+    width: 36px; height: 36px;
+}
+
+.footerLinkStyles {
+    @apply hover:text-white cursor-pointer;
+}
+
+.mobile-menu {
+    background-color: rgba(32,32,45, 0.9);
+}
