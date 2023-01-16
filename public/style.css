@@ -1309,6 +1309,10 @@ video {
     align-items: flex-start;
   }
 
+  .md\:justify-end{
+    justify-content: flex-end;
+  }
+
   .md\:gap-32{
     gap: 8rem;
   }
@@ -1316,6 +1320,11 @@ video {
   .md\:px-20{
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+
+  .md\:py-4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .md\:pt-0{
