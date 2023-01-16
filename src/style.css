@@ -32,7 +32,7 @@
 
 
 .community-card {
-    @apply flex md:w-1/2 w-full px-10 py-8 gap-8 rounded-xl  bg-white items-start shadow-md;
+    @apply md:w-1/2 w-full px-10 py-8 gap-4 rounded-xl  bg-white items-start shadow-md;
 }
 
 .tabContent {

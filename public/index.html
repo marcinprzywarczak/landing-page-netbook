@@ -62,7 +62,7 @@
             </div>
         </div>
         <!--zdj-->
-        <div><img src="./imgs/connections-people.svg" alt=""> </div>
+        <img src="./imgs/connections-people.svg" alt="">
     </div>
 </header>
 <section class="container flex md:flex-row flex-col items-center py-20 gap-20 sectionOpacity">
@@ -182,10 +182,10 @@
                 of selection.</p>
         </div>
 
-        <div class="flex flex-col items-center md:px-20 px-10 gap-12">
+        <div class="flex flex-col items-center md:px-20 px-2 gap-12">
             <div class="flex flex-col md:flex-row gap-12">
-                <!--card-->
-                <div class="community-card">
+                <!--card1-->
+                <div class="community-card hidden sm:flex sm:gap-8">
                     <img class="-mt-1" src="./imgs/members-icon.svg" alt="">
 
                     <div class="flex flex-col gap-3">
@@ -194,22 +194,40 @@
                             Message</p>
                     </div>
                 </div>
-                <!--card-->
-                <div class="community-card">
+                <!--card1 mobile-->
+                <div class="community-card flex flex-col sm:hidden">
+                    <div class="flex gap-4">
+                        <img class="-mt-1" src="./imgs/members-icon.svg" alt="">
+                        <h2 class="text-xl text-header-color font-semibold">Members, Friends</h2>
+                    </div>
+                    <p class="text-menu-text-color">Members, Friends Connection ( like followers ), Private
+                        Message
+                    </p>
+                </div>
 
-                        <img class="-mt-1" src="./imgs/groups-icon.svg" alt="">
-
+                <!--card2-->
+                <div class="community-card hidden sm:flex sm:gap-8">
+                    <img class="-mt-1" src="./imgs/groups-icon.svg" alt="">
                     <div class="flex flex-col gap-3">
                         <h2 class="text-xl text-header-color font-semibold">Groups</h2>
                         <p class="text-menu-text-color">Your users can create groups to let other users to join and
                             talk</p>
                     </div>
                 </div>
+                <!--card2 mobile-->
+                <div class="community-card flex flex-col sm:hidden">
+                    <div class="flex gap-4">
+                        <img class="-mt-1" src="./imgs/groups-icon.svg" alt="">
+                        <h2 class="text-xl text-header-color font-semibold">Groups</h2>
+                    </div>
+                    <p class="text-menu-text-color">Your users can create groups to let other users to join and
+                        talk</p>
+                </div>
 
             </div>
             <div class="flex flex-col md:flex-row gap-12">
-                <!--card-->
-                <div class="community-card">
+                <!--card3-->
+                <div class="community-card hidden sm:flex sm:gap-8">
 
                     <img class="-mt-1 h-fit" src="./imgs/forum-icon.svg" alt="">
 
@@ -218,19 +236,38 @@
                         <p class="text-menu-text-color">Forum is ready by BBPress. Your users can make topics and talk.</p>
                     </div>
                 </div>
-                <!--card-->
-                <div class="community-card">
+                <!--card3 mobile-->
+                <div class="community-card flex flex-col sm:hidden">
+                    <div class="flex gap-4">
+                        <img class="-mt-1" src="./imgs/forum-icon.svg" alt="">
+                        <h2 class="text-xl text-header-color font-semibold">Forum</h2>
+                    </div>
+                    <p class="text-menu-text-color">Forum is ready by BBPress. Your users can make topics and talk.</p>
+
+                </div>
+
+                <!--card4-->
+                <div class="community-card hidden sm:flex sm:gap-8">
                     <img class="-mt-1 h-fit" src="./imgs/module-icon.svg" alt="">
                     <div class="flex flex-col gap-3">
                         <h2 class="text-xl text-header-color font-semibold">Custom Module</h2>
                         <p class="text-menu-text-color">You can create Members, Groups Module. We already created 3 modules. It's by drag & drop live builder.</p>
                     </div>
                 </div>
+                <!--card4 mobile-->
+                <div class="community-card flex flex-col sm:hidden">
+                    <div class="flex gap-4">
+                        <img class="-mt-1" src="./imgs/module-icon.svg" alt="">
+                        <h2 class="text-xl text-header-color font-semibold">Custom Module</h2>
+                    </div>
+                    <p class="text-menu-text-color">You can create Members, Groups Module. We already created 3 modules. It's by drag & drop live builder.</p>
+
+                </div>
 
             </div>
             <div class="flex flex-col md:flex-row gap-12">
-                <!--card-->
-                <div class="community-card">
+                <!--card5-->
+                <div class="community-card hidden sm:flex sm:gap-8">
 
                         <img class="-mt-1" src="./imgs/list-icon.svg" alt="">
 
@@ -239,8 +276,18 @@
                         <p class="text-menu-text-color">Members, Groups list can be modified by drag & drop live builder.</p>
                     </div>
                 </div>
-                <!--card-->
-                <div class="community-card">
+                <!--card5 mobile-->
+                <div class="community-card flex flex-col sm:hidden">
+                    <div class="flex gap-4">
+                        <img class="-mt-1" src="./imgs/list-icon.svg" alt="">
+                        <h2 class="text-xl text-header-color font-semibold">List Builder</h2>
+                    </div>
+                    <p class="text-menu-text-color">Members, Groups list can be modified by drag & drop live builder.</p>
+
+                </div>
+
+                <!--card6-->
+                <div class="community-card hidden sm:flex sm:gap-8">
 
                         <img class="-mt-1" src="./imgs/listscroll-icon.svg" alt="">
 
@@ -249,6 +296,15 @@
                         <p class="text-menu-text-color">8 different scroll effects are ready.
                             You can always change by your tastes.</p>
                     </div>
+                </div>
+                <!--card6 mobile-->
+                <div class="community-card flex flex-col sm:hidden">
+                    <div class="flex gap-4">
+                        <img class="-mt-1" src="./imgs/listscroll-icon.svg" alt="">
+                        <h2 class="text-xl text-header-color font-semibold">List Scroll Effects</h2>
+                    </div>
+                    <p class="text-menu-text-color">8 different scroll effects are ready.
+                        You can always change by your tastes.</p>
                 </div>
 
             </div>
